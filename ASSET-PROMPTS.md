@@ -1,5 +1,9 @@
 # Sunshine Bay asset package
 
+## Full-screen panorama
+
+assets/beach-panorama.png — built-in ImageGen horizontal extension of beach-living.png, requested as an ultrawide 3:1 panorama. Keep the original beach scene centred and extend both sides seamlessly with palms, hibiscus, boardwalk, dunes, coastal rocks and ocean. Match the original sunny 3D game rendering and retain the kiosk, stage, umbrella and rockpool layout; no people, animals, turtle, litter, text or new interactive objects. Returned image: 2172×724, displayed as a 3072×1024 panoramic environment behind the logical playfield.
+
 ## Animated-world additions (November 2026)
 
 beach-living.png is an ImageGen edit of beach-clean.png: remove only the static turtle, fill its area with matching water and underwater pebbles, and preserve the beach layout. The turtle is now an independent sprite animated by beach-life.js. Floating debris and wave/ripple overlays are independent game elements; litter removal follows mission state.

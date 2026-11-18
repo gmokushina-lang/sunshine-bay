@@ -1,4 +1,8 @@
 /* Lightweight side quest card. The beach stays bright and interactive. */
+/* Wide artwork extends beyond the logical playfield, filling the viewport. */
+.world-shell {background: #e5c591 url('assets/beach-panorama.png') center / cover no-repeat}
+#world {overflow: visible}
+#world .environment {width: 3072px; height: 1024px; left: -768px; top: 0; max-width: none}
 /* Active clues always sit above character silhouettes and nameplates. */
 #entities .hotspot {z-index: 3000 !important}
 #entities .beach-visitor,

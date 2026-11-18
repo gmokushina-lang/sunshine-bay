@@ -4,7 +4,7 @@ Unzip the package and open index.html in Chrome or Edge. Keep the assets folder 
 
 ## Play
 
-Click the sand to walk, or use the arrows / WASD. Click a character to approach and talk, or a glowing circle to explore. Mia never walks automatically after a conversation or mission. Open “⚑ Mission” for a small side task card without dimming the beach. “Show on the beach” marks a destination; you decide when and where to move.
+Click the sand to walk, or use the arrows / WASD. Click a character to approach and talk, or a glowing circle to explore. Mia never walks automatically after a conversation or mission. Open “⚑ Mission” for a small side task card without dimming the beach. “Show me” marks a destination; you decide when and where to move.
 
 Choose a plan, explain your idea aloud, then press “I’ve said my idea”. Use “Type instead” to write your answer. Characters ask a follow-up question. Find the item for your plan and bring it back. The water cart starts beside the boardwalk. The backpack stays at the top of the screen. The whole beach fits in the viewport; there is no page scrolling.
 
@@ -17,6 +17,8 @@ Designed for A2–B1 individual lessons, around 15–25 minutes. Invite the lear
 Characters use branching, prewritten dialogue. Typed answers can route an open plan using keywords; the game does not evaluate meaning or grammar. There is no speech recognition. The teacher listens to spoken answers and can expand the character’s response.
 
 ## Files
+
+The panoramic background fills the screen edges. The logical playfield and all controls still fit without page scrolling. Both wrapper clues are on open sand away from the characters. Visitors use a separate approach lane; volunteers work in separate beach areas.
 
 index.html — interface. game.js — navigation and interaction. story.js — five missions and fifteen dialogue branches. game.css and readability.css — visual design and large-text layout. assets/ — generated environment, clean environment, character sheet, walk animation and item atlas. ASSET-PROMPTS.md — image-generation prompts.
 
