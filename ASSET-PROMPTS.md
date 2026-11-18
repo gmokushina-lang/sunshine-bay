@@ -1,5 +1,11 @@
 # Sunshine Bay asset package
 
+## Animated-world additions (November 2026)
+
+beach-living.png is an ImageGen edit of beach-clean.png: remove only the static turtle, fill its area with matching water and underwater pebbles, and preserve the beach layout. The turtle is now an independent sprite animated by beach-life.js. Floating debris and wave/ripple overlays are independent game elements; litter removal follows mission state.
+
+visitors.png was generated with built-in ImageGen as a transparent 3×2 full-body sprite atlas with consistent raised three-quarter camera, warm lighting, rounded detailed 3D materials, equal scale, aligned feet and no scenery. Requested visitors: a red-haired adult woman in a cream shirt and teal shorts; a dark-skinned man in a navy polo, beige shorts and sunhat; a teenage boy in a pale yellow striped shirt and turquoise shorts; a female volunteer in an orange vest and blue shorts; a male volunteer with a navy cap, sage shirt and tan shorts; a blond teenage girl in a coral top and green shorts. Empty hands allow bottles or grabbers to be attached in code. No floor, shadows, text, borders, overlap or drawn inventory items.
+
 Generated with the built-in ImageGen tool. All production images are stored in assets/. No paid API key, externally loaded image or image-generation service is required to play.
 
 ## beach-world.png
