@@ -1,0 +1,78 @@
+/* Lightweight side quest card. The beach stays bright and interactive. */
+.mission-overlay {
+  inset: auto 18px auto auto;
+  top: 96px;
+  width: min(330px, calc(100vw - 28px));
+  padding: 0;
+  display: block;
+  background: transparent;
+  backdrop-filter: none;
+  pointer-events: none;
+  animation: questSlideIn .38s cubic-bezier(.2,.7,.25,1);
+}
+.mission-overlay aside {
+  width: 100%; padding: 20px;
+  pointer-events: auto;
+  border: 1px solid #e4e6d4;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px #264b4230;
+  max-height: calc(100dvh - 120px);
+}
+.mission-overlay .quest-top {min-height: 28px; padding-right: 35px}
+.mission-overlay .quest-top .overline,
+.mission-overlay h1,
+.mission-overlay .progress,
+.mission-overlay .manual-note {display: none !important}
+.mission-overlay .goal {font-size: 23px !important; margin: 10px 0 18px !important; line-height: 1.3}
+.mission-overlay .go-target {font-size: 18px; padding: 12px; min-height: 44px}
+.mission-overlay .speaking-tip {margin: 6px 0 0}
+.mission-overlay .speaking-tip button {font-size: 16px; min-height: 36px}
+.close-panel {top: 12px; right: 12px; width: 32px; height: 32px; font-size: 23px}
+.scene-top .location {display: none}
+.scene-top {justify-content: flex-end}
+#toast {font-size: 18px; width: fit-content; padding: 10px 16px}
+
+/* Relaxed guests, not a grid of rapidly rocking cutouts. */
+.beach-visitor .visitor-sprite {animation: none}
+.beach-visitor.relaxed .visitor-sprite {
+  animation: relaxedBreath var(--breath-time, 7s) ease-in-out var(--breath-delay, 0s) infinite;
+}
+.beach-visitor.relaxed {animation: guestArrive .8s ease-out both}
+.party-particle {font-size: 18px}
+.stage-party .actor .sprite {animation: none}
+.stage-party .questmark,
+.stage-party #entities .item,
+.stage-party #gloves-prop,
+.stage-party .visitor-bottle {display: none}
+.stage-lights {opacity: .22}
+.stage-lights i {
+  clip-path: none;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 50% 15%, #fff0b8, transparent 72%);
+  animation: warmLight 8s ease-in-out infinite alternate;
+}
+.stage-lights i:nth-child(2) {
+  background: radial-gradient(ellipse at 50% 15%, #ffdcaf, transparent 72%);
+  animation-delay: -4s;
+}
+#partyBanner {
+  top: 13px; left: 18px; transform: none;
+  font-size: 20px; font-weight: 700;
+  padding: 10px 18px; border-radius: 13px;
+  background: #fff8dfed; box-shadow: 0 4px 15px #254d3b22;
+}
+.festival-decoration {display: none}
+@keyframes questSlideIn {from {opacity: 0; translate: 32px 0} to {opacity: 1; translate: 0 0}}
+@keyframes relaxedBreath {50% {transform: translateY(-.8px)}}
+@keyframes warmLight {from {opacity: .55} to {opacity: .85}}
+@keyframes guestArrive {from {opacity: 0} to {opacity: 1}}
+@media (max-width: 1240px) {
+  .mission-overlay {top: 130px; right: 12px}
+  .mission-overlay aside {max-height: calc(100dvh - 145px)}
+}
+@media (max-width: 640px) {
+  .mission-overlay {width: min(290px, calc(100vw - 20px)); right: 10px}
+  .mission-overlay aside {padding: 17px}
+  .mission-overlay .goal {font-size: 21px !important}
+  #partyBanner {font-size: 17px; left: 10px; top: 52px; padding: 8px 13px}
+}
