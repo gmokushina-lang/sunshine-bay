@@ -1,0 +1,13 @@
+.cleanup-worker {position:absolute;width:175px;height:175px;transform:translate(-50%,-100%);pointer-events:none;opacity:0;transition:opacity .4s;filter:drop-shadow(0 7px 3px #46553e33)}
+.cleanup-worker.working {opacity:1}
+.worker-sprite {width:100%;height:100%;background:url('assets/cleanup-cycle.png');background-size:400% 200%;background-repeat:no-repeat}
+.worker-bag {display:none;position:absolute;left:57%;top:60%;width:32px;height:42px;background:linear-gradient(100deg,#737e75,#abb5a8 48%,#69756d);clip-path:polygon(42% 0,62% 0,65% 12%,85% 26%,100% 85%,78% 100%,19% 96%,0 80%,17% 25%,39% 12%);border-radius:40%;filter:drop-shadow(0 3px 2px #27352d44)}
+.cleanup-worker.carrying .worker-bag {display:block}
+#festivalFireworks {position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:26}
+.music-notes {position:absolute;left:43%;top:4%;width:25%;height:25%;z-index:4;pointer-events:none;overflow:visible}
+.music-notes span {position:absolute;bottom:0;font-size:48px;font-weight:700;color:#f6ca68;text-shadow:0 2px 8px #8b6e4333;animation:floatingNote var(--note-time,5s) linear var(--note-delay,0s) infinite}
+.music-notes span:nth-child(2n) {color:#65bbae}
+.music-notes span:nth-child(3n) {color:#d28bb2}
+@keyframes floatingNote {0%{opacity:0;transform:translate(0,30px) rotate(-8deg)}20%{opacity:.95}80%{opacity:.8}100%{opacity:0;transform:translate(45px,-160px) rotate(9deg)}}
+#music.music-pending {background:#f5d78f;animation:musicInvite 2s ease-in-out infinite}
+@keyframes musicInvite {50%{box-shadow:0 0 0 4px #f3d58844}}

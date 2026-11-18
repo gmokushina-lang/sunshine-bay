@@ -1,5 +1,9 @@
 # Sunshine Bay asset package
 
+## Animated clean-up volunteer
+
+assets/cleanup-cycle.png — built-in ImageGen, transparent 4×2 sprite atlas of the same friendly worker: tied curly dark hair, orange volunteer vest, cream shirt, navy shorts, protective gloves and a green grabber. Top row: four walking-cycle frames. Bottom row: leaning down, crouching to pick up rubbish with the grabber, standing with a tied gray bag, and dropping the bag into a bin outside the frame. Consistent elevated three-quarter 3D game camera, equal cells, full body, aligned feet, no background, floor, shadows, text or borders. Used for actual walking, collection and disposal instead of rotating a static cutout.
+
 ## Full-screen panorama
 
 assets/beach-panorama.png — built-in ImageGen horizontal extension of beach-living.png, requested as an ultrawide 3:1 panorama. Keep the original beach scene centred and extend both sides seamlessly with palms, hibiscus, boardwalk, dunes, coastal rocks and ocean. Match the original sunny 3D game rendering and retain the kiosk, stage, umbrella and rockpool layout; no people, animals, turtle, litter, text or new interactive objects. Returned image: 2172×724, displayed as a 3072×1024 panoramic environment behind the logical playfield.

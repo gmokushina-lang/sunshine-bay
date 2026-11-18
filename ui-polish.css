@@ -74,13 +74,35 @@
 @keyframes relaxedBreath {50% {transform: translateY(-.8px)}}
 @keyframes warmLight {from {opacity: .55} to {opacity: .85}}
 @keyframes guestArrive {from {opacity: 0} to {opacity: 1}}
+/* Keep conversations in a compact left panel, leaving the beach visible. */
+.dialogue {
+  left: 14px; right: auto; top: 96px; bottom: auto;
+  transform: none; width: min(390px, calc(100vw - 28px));
+  max-height: calc(100dvh - 112px);
+  display: block; padding: 18px;
+  animation: dialogueSlideIn .3s ease-out;
+}
+.dialogue .portrait-wrap {position: absolute; left: 16px; top: 14px; width: 48px}
+.dialogue .portrait {width: 48px; height: 60px}
+.dialogue .dialogue-head {margin-left: 58px; min-height: 56px}
+.dialogue .dialogue-head b {font-size: 24px}
+.dialogue #npcLine {font-size: 21px; line-height: 1.35; margin: 12px 0}
+.dialogue #speakingPrompt {font-size: 17px; line-height: 1.4}
+.dialogue #choices {gap: 7px}
+.dialogue #choices button {font-size: 16px; padding: 10px 12px; min-height: 42px}
+.dialogue .primary,.dialogue .oral {font-size: 17px; padding: 10px 13px; min-height: 43px}
+.dialogue .answer-actions {gap: 7px; flex-wrap: wrap}
+.dialogue textarea {font-size: 18px; min-height: 70px}
+@keyframes dialogueSlideIn {from {opacity: 0; translate: -24px 0} to {opacity: 1; translate: 0 0}}
 @media (max-width: 1240px) {
   .mission-overlay {top: 130px; right: 12px}
   .mission-overlay aside {max-height: calc(100dvh - 145px)}
+  .dialogue {top: 130px; max-height: calc(100dvh - 144px)}
 }
 @media (max-width: 640px) {
   .mission-overlay {width: min(290px, calc(100vw - 20px)); right: 10px}
   .mission-overlay aside {padding: 17px}
   .mission-overlay .goal {font-size: 21px !important}
   #partyBanner {font-size: 17px; left: 10px; top: 52px; padding: 8px 13px}
+  .dialogue {left: 10px; width: min(370px, calc(100vw - 20px)); padding: 15px}
 }
