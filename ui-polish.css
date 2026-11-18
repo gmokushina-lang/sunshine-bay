@@ -1,4 +1,8 @@
 /* Lightweight side quest card. The beach stays bright and interactive. */
+/* Active clues always sit above character silhouettes and nameplates. */
+#entities .hotspot {z-index: 3000 !important}
+#entities .beach-visitor,
+#entities .beach-visitor * {pointer-events: none !important}
 .mission-overlay {
   inset: auto 18px auto auto;
   top: 96px;
